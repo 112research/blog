@@ -1,7 +1,20 @@
-# blog
+# 112research
+
+## Catetories
+
+{% for category in site.categories %}
+<h2>{{ category[0] }}</h2>
+<ul>
+  {% for post in category[1] %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+## Articles
 
 {% if site.posts.size == 0 %}
-まだ記事がありません。
+No Articles
 {% else %}
 <ul>
 {% for post in site.posts %}
