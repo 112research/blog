@@ -43,7 +43,7 @@
         <div class="with-sidebar">
           <main>{{ content }}</main>
           <aside class="sidebar">
-            <h2>記事一覧</h2>
+            <h2>Articles</h2>
             <ul>
             {% for post in site.posts %}
               <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><br><small>{{ post.date | date: "%Y-%m-%d" }}</small></li>
