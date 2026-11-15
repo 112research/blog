@@ -30,6 +30,7 @@
         <div class="with-sidebar">
           <main>
             {{ content }}
+            <p>Category: {% for category in page.categories %}{% assign slug = category | slugify %}<a href="{{ '/categories/' | append: slug | append: '/' | relative_url }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
             <hr>
             <script src="https://giscus.app/client.js"
                     data-repo="112research/blog"
