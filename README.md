@@ -1,7 +1,5 @@
 # blog
 
-##Articles
-
 {% if site.posts.size == 0 %}
 まだ記事がありません。
 {% else %}
