@@ -1,15 +1,13 @@
 # 112research
 
-## Catetories
+## Categories
 
-{% for category in site.categories %}
-<h3>{{ category[0] }}</h3>
 <ul>
-  {% for post in category[1] %}
-  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+{% for category in site.categories %}
+  {% assign slug = category[0] | slugify %}
+  <li><a href="{{ '/categories/' | append: slug | append: '/' | relative_url }}">{{ category[0] }}</a> ({{ category[1].size }})</li>
 {% endfor %}
+</ul>
 
 ## Articles
 
