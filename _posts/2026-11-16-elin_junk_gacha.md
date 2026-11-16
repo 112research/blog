@@ -102,6 +102,6 @@ categories: Elin
 </figure>
 
 <figure>
-  <img src="{{ '/assets/2026-11-16_elin_junk_gacha_rare.webp' | relative_url }}" alt="エーテル製のビーチボール">
+  <img src="{{ '/assets/2026-11-16_elin_ball_ether.webp' | relative_url }}" alt="エーテル製のビーチボール">
   <figcaption>ついに出ました</figcaption>
 </figure>
